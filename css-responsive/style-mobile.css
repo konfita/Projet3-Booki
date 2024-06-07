@@ -1,1 +1,615 @@
+/****** General ***********/
+* {
+  font-family: "Raleway", sans-serif;
+}
 
+:root {
+  --main-color: #0065fc;
+  --main-bg-color: #f2f2f2;
+  --filter-bg-color: #deebff;
+}
+
+.fa-solid {
+  color: var(--main-color);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.section-title {
+  margin: 0rem;
+  font-size: 1.375rem;
+}
+
+.card img {
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1rem;
+}
+
+.euro {
+  font-weight: 700;
+}
+
+.neutral-star {
+  color: var(--main-bg-color);
+}
+
+html {
+  font-size: 16px;
+}
+
+/*Responsive Mobile*/
+@media screen and (max-width: 767px) {
+  .main-container {
+    width: 100%;
+    max-width: 48rem;
+    max-height: 300rem;
+  }
+}
+/*Responsive Mobile Header*/
+@media screen and (max-width: 48rem) {
+  .entete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 23.44rem;
+    height: 7.19rem;
+    background-color: white;
+    margin: 0rem;
+    position: relative;
+  }
+  
+  nav {
+    position: absolute;
+    top: 3rem;
+    margin: auto;
+  }
+  
+  nav a {
+    margin-right: 3rem;
+  }
+  
+  a[title]:hover {
+    text-decoration: overline;
+    color: var(--main-color);
+  }
+  
+  .bloc-logo img {
+    width: 3.82rem;
+    height: 1.19rem;
+    margin: 0.625rem 1.25rem;
+  }
+  
+}
+
+/*Responsive Mobile Main*/
+@media screen and (max-width: 48rem) {
+  main {
+    width: 23.44rem;
+  }
+  .info-group {
+    width: 23.44rem;
+    height: 33rem;
+    margin-bottom: 2rem;
+  }
+  .intro {
+    width: 20.94rem;
+    height: 4.94rem;
+    margin: auto;
+  }
+  .intro h1 {
+    width: 20.94rem;
+    font-size: 1.375rem;
+    font-weight: 700;
+  }
+
+  .intro p {
+    width: 20.94rem;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+}
+
+/*Responsive Mobile Search*/
+@media screen and (max-width: 48rem) {
+  input .bouton-recherche {
+    display: none;
+  }
+  .loupe {
+    position: relative;
+    left: 8.35rem;
+    width: 3.06rem;
+    height: 3.06rem;
+    border-radius: 0.94rem;
+    background: #0065fc;
+    border: 0.0625rem solid #0065fc;
+  }
+
+  .search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    width: 20.94rem;
+    height: 3.06rem;
+    background: #ffffff;
+    border: 0.0625rem solid #f2f2f2;
+    border-radius: 0.94rem;
+    margin: 2rem;
+  }
+
+  .location {
+    position: absolute;
+    width: 3.125rem;
+    height: 3.06rem;
+    background: #f2f2f2;
+    border: 0.0625rem solid #f2f2f2;
+    border-radius: 0.94rem 0rem 0rem 0.94rem;
+  }
+
+  .location i {
+    position: relative;
+    width: 0.875rem;
+    height: 1.125rem;
+    left: 1.25rem;
+    top: 0.94rem;
+    color: black;
+  }
+  form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .marseille {
+    position: relative;
+    left: 5rem;
+    width: 9.18rem;
+    height: 1.31rem;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.31rem;
+    text-align: center;
+    color: #000000;
+    border: none;
+  }
+
+  .loupe i {
+    position: relative;
+    left: 1.06rem;
+    top: 1.06rem;
+    color: white;
+  }
+
+  .bouton-recherche {
+    display: none;
+  }
+}
+/*Responsive Mobile*/
+@media screen and (max-width: 48rem) {
+  input .bouton-recherche {
+    display: none;
+  }
+
+  .loupe {
+    position: relative;
+    left: 8.35rem;
+    width: 3.06rem;
+    height: 3.06rem;
+    border-radius: 0.94rem;
+    background: var(--main-color);
+    border: 0.0625rem solid var(--main-color);
+  }
+
+  .search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    width: 20.94rem;
+    height: 3.06rem;
+    background: #ffffff;
+    border: 0.0625rem solid var(--main-bg-color);
+    border-radius: 0.94rem;
+    margin: auto;
+  }
+
+  .location {
+    position: absolute;
+    width: 3.125rem;
+    height: 3.06rem;
+    background: var(--main-bg-color);
+    border: 0.0625rem solid var(--main-bg-color);
+    border-radius: 0.94rem 0rem 0rem 0.94rem;
+  }
+
+  .location i {
+    position: relative;
+    width: 0.875rem;
+    height: 1.125rem;
+    left: 1.25rem;
+    top: 0.94rem;
+    color: black;
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .marseille {
+    position: relative;
+    left: 5rem;
+    width: 9.18rem;
+    height: 1.31rem;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.31rem;
+    text-align: center;
+    color: #000000;
+    border: none;
+  }
+
+  .loupe i {
+    position: relative;
+    left: 1.06rem;
+    top: 1.06rem;
+    color: white;
+  }
+
+  .bouton-recherche {
+    display: none;
+  }
+}
+/*Responsive Mobile Filtre*/
+@media screen and (max-width: 48rem) {
+  .filtre-zone h2 {
+    width: 3.375rem;
+    height: 1.31rem;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-align: start;
+    margin: 0rem;
+  }
+  .filtre-zone {
+    display: flex;
+    flex-direction: column;
+    width: 20.94rem;
+    height: 15rem;
+    margin: 0rem;
+  }
+  .mobile-filtre {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    align-items: center;
+    gap: 0.8rem;
+    width: 23.44rem;
+    height: 10.06rem;
+    margin-left: 2rem;
+  }
+
+  .button {
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.25rem;
+    text-align: center;
+    width: 10.16rem;
+    height: 3.125rem;
+    padding: 0.25rem 1.19rem 0.25rem 1.19rem;
+    border-radius: 1.56rem 1.56rem 1.56rem 1.56rem;
+    border: 0.125rem;
+    border: 0.125rem solid #d9d9d9;
+    background-color: white;
+  }
+
+  .button i {
+    color: var(--main-color);
+  }
+
+  .conteneur h2 {
+    font-family: Raleway;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.32rem;
+  }
+  .conteneur :hover {
+    background-color: var(--filter-bg-color);
+  }
+}
+
+/*Responsive Mobile Info*/
+@media screen and (max-width: 48rem) {
+  .info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 20.94rem;
+    height: 3rem;
+    gap: 0.625rem;
+    background: #ffffff;
+    margin-top: 2rem;
+  }
+
+  .info i {
+    position: absolute;
+    left: 0.4rem;
+    right: 5.625rem;
+    top: 0.125rem;
+    bottom: 1.25rem;
+  }
+
+  .info p {
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.17rem;
+    text-align: left;
+    word-break: break-all;
+    max-width: 20.94rem;
+    max-height: 4rem;
+  }
+  element[class="cercle"] {
+    position: relative;
+    max-width: 4rem;
+    max-height: 4rem;
+    border: 0.0625rem solid #d9d9d9;
+    border-radius: 0.94rem 0.94rem 0.94rem 0.94rem;
+  }
+}
+
+/*Responsive Mobile Hebergements*/
+@media screen and (max-width: 48rem) {
+  .hebergements-and-populaires {
+    display: flex;
+    justify-content: left;
+    flex-direction: column-reverse;
+    width: 23.44rem;
+    margin: 0rem 0rem 4rem;
+    height: 140rem;
+    gap: 2rem;
+  }
+
+  .hebergements {
+    width: 23.44rem;
+    height: 102rem;
+    padding: 1rem 0rem;
+    box-sizing: unset;
+    background-color: white;
+  }
+
+  .section-title-heb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+  }
+
+  .hebergements h4 {
+    margin: 0.625rem 0.625rem;
+  }
+
+  .carre-gris {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+  }
+
+  .card-heb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem 0rem 0.94rem;
+    gap: 0.25rem;
+    width: 21rem;
+    height: 13rem;
+    background: #ffffff;
+    border-radius: 1.25rem;
+    filter: drop-shadow(0rem 0.19rem 0.94rem rgba(0, 0, 0, 0.1));
+  }
+
+  .card-heb img {
+    box-sizing: border-box;
+    width: 100%;
+    height: 7.75rem;
+    border: 0.31rem solid #ffffff;
+    border-radius: 1.25rem 1.25rem 0rem 0rem;
+  }
+
+  .card-content-heb {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    padding-left: 1.25rem;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card-title {
+    margin: 0.625rem 0rem 0rem 0.5rem;
+  }
+  .card-subtitle {
+    margin: 0rem 1rem 0rem 0.5rem;
+  }
+
+  .card-rating {
+    margin: 0rem 1rem 0rem 0.5rem;
+    padding: 0rem;
+  }
+
+  .hebergements p {
+    width: 50.69rem;
+    height: 1.31rem;
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.31rem;
+    color: #000000;
+  }
+}
+
+/*Responsive Mobile Populaires*/
+@media screen and (max-width: 48rem) {
+  .populaires {
+    width: 23.44rem;
+    height: 40rem;
+    border-radius: 0.94rem;
+    padding: 1.25rem 0.94rem;
+    background-color: var(--main-bg-color);
+    margin: 0rem;
+  }
+
+  .section-title-pop {
+    margin: 0rem 0.625rem;
+  }
+
+  .populaires-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 1.25rem;
+    width: 20.94rem;
+    padding: 0rem;
+    margin: 0rem;
+    gap: 0.625rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    width: 21rem;
+    height: 9.625rem;
+    border-radius: 1.25rem;
+    filter: drop-shadow(0rem 0.19rem 0.94rem rgba(0, 0, 0, 0.1));
+    background-color: white;
+  }
+
+  .card img {
+    width: 6.93rem;
+    height: 9.125rem;
+    border-radius: 1.25rem 0rem 0rem 1.25rem;
+    border: 0.31rem 0rem;
+    padding: 0.25rem;
+  }
+
+  .card-content {
+    width: 13.94rem;
+  }
+  .populaires-cards .card-title {
+    width: 12rem;
+    padding: 0rem;
+    margin: 1rem 0rem 0rem;
+  }
+
+  .populaires-cards .card-subtitle {
+    margin: 0rem;
+    width: 12.71rem;
+    height: 1rem;
+    padding: 0rem;
+  }
+
+  .populaires-cards .card-rating {
+    padding: 0rem;
+    margin: 0rem;
+  }
+}
+
+/*Responsive Mobile Activités*/
+@media screen and (max-width: 48rem) {
+  .activites {
+    width: 23.44rem;
+    height: 60.31rem;
+    border-radius: 0.94rem;
+    padding: 1.875rem 0rem;
+    margin: 0rem;
+  }
+
+  .activites-title h2 {
+    padding: 1.25rem 0rem 1.25rem 0rem;
+  }
+
+  .frame14 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 23.44rem;
+    height: 130rem;
+    gap: 1rem;
+    margin: 0rem;
+    padding: 0rem;
+  }
+
+  .card-act {
+    width: 19.68rem;
+    height: 12.5rem;
+    filter: drop-shadow(0rem 0.19rem 0.94rem rgba(0, 0, 0, 0.1));
+    background: #ffffff;
+    border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+  }
+
+  .card-act img {
+    width: 19.68rem;
+    height: 8.81rem;
+    border-radius: 1.25rem 1.25rem 0rem 0rem;
+  }
+
+  .card-content-act {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem 1.25rem;
+    width: 13.14rem;
+    height: 4rem;
+  }
+}
+
+/*Responsive Mobile Footer*/
+@media screen and (max-width: 48rem) {
+  .pied-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    width: 23.44rem;
+    height: 28.81rem;
+    margin: 0rem;
+  }
+
+  .bloc {
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    height: 10.18rem;
+    padding: 0rem 1.25rem;
+    gap: 0rem;
+    text-align: left;
+  }
+
+  .bloc h3 {
+    margin-bottom: 0rem;
+  }
+  .bloc p {
+    margin: 0.94rem 0rem 0rem 0rem;
+  }
+}
