@@ -1,0 +1,34 @@
+@media screen and (min-width: 1024px) {
+  .entete {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    width: 98%;
+    max-width: 1340px;
+    height: 79px;
+    margin: auto;
+    position: relative;
+  }
+  nav {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+  }
+  nav a {
+    height: 35px;
+    box-sizing: border-box;
+    margin-left: 30px;
+    gap: 30px;
+  }
+  nav a:hover {
+    border-top: 1.6px solid var(--main-color);
+    color: var(--main-color);
+    padding-top: 6px;
+  }
+  .bloc-logo img {
+    width: 61px;
+    height: 19px;
+  }
+}

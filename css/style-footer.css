@@ -1,0 +1,27 @@
+@media screen and (min-width: 1024px) {
+  .pied-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    width: 98%;
+    max-width: 1340px;
+    height: 163px;
+    margin:auto;
+  }
+  .bloc {
+    display: flex;
+    flex-direction: column;
+    width: 406px;
+    height: 163px;
+    padding: 0px 24px;
+    gap: 0px;
+    text-align: left;
+  }
+  .bloc h3 {
+    margin-bottom: 0px;
+  }
+  .bloc p {
+    margin: 15px 0px 0px 0px;
+  }
+}

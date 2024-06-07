@@ -1,0 +1,35 @@
+@media screen and (min-width: 1024px) {
+  .info-group {
+    width: 98%;
+    max-width: 1340px;
+    height: 281px;
+    margin: auto;
+  }
+  .info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 1344px;
+    height: 24px;
+    background: #ffffff;
+    margin-bottom: 35px;
+  }
+  .info i {
+    position: absolute;
+    left: 10px;
+    right: 90px;
+    top: 2px;
+    bottom: 20px;
+  }
+  .info p {
+    margin: 16px;
+  }
+  span[class="cercle"] {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--main-bg-color);
+    border-radius: 15px 15px 15px 15px;
+  }
+}

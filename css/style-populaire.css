@@ -1,0 +1,71 @@
+@media screen and (min-width: 1024px) {
+  .populaires {
+    width: 33%;
+    /* height: 614px; */
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  .populaires-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 30px 0px 30px;
+  }
+
+  .section-title-pop {
+    margin: 0px;
+  }
+
+  .populaires-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 32px;
+    gap: 20px;
+  }
+
+  .card {
+    display: flex;
+    margin: 16px 0px 0px;
+    background-color: white;
+    padding: 5px;
+    width: 80%;
+    max-width: 369px;
+    height: 146px;
+    border-radius: 20px;
+    margin: auto;
+  }
+
+  .card img {
+    width: 100%;
+    max-width: 123px;
+    height: 146px;
+    border-radius: 20px 0px 0px 20px;
+    border: 5px;
+  }
+
+  .populaires-cards .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .populaires-cards .card-title {
+    width: 100%;
+    max-width: 226px;
+  }
+
+  .populaires-cards .card-subtitle {
+    width: 100%;
+    max-width: 226px;
+    height: 16px;
+  }
+
+  .populaires-cards .card-rating {
+    margin-bottom: 5px;
+  }
+}
